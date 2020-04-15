@@ -1,0 +1,256 @@
+.ex-1-square{
+    transition: all 2s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+.ex-2-square{
+    transition: all 2s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+.ex-3-square{
+    transition: all 2s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+.ex-4-square{
+    transition: all 2s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+.ex-5-square{
+    transition: all 2s;
+}
+
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+.ex-5-square:active{
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+.ex-7-img{
+    transition: all 2s;
+}
+
+.ex-7-img:hover{
+    filter: sepia(1) brightness(150%);
+}
+
+.ex-8-img{
+    transition: all 2s;
+}
+
+.ex-8-img:hover{
+    filter: sepia(0.75) brightness(75%);
+    border-radius: 25px;
+}
+
+.ex-9-img{
+    transition: all 2s;
+}
+
+.ex-9-img:hover{
+    filter: sepia(0.75) brightness(75%);
+    border-radius: 25px;
+    transform: scale(1.5);
+}
+
+.ex-10-icon{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.ex-11-icon:hover{
+    animation-name: rotate-h;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: translate-t;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: translate-b;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: translate-tc;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: translate-bc;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-h {
+    0% {
+        transform: rotate(0);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes translate-t {
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+
+    40%{
+        top: -10px;
+        left: 70%;
+    }
+
+    90%{
+        top: -10px;
+        left: 0;
+    }
+
+    100%{
+        top: -10px;
+        left: 10%;
+    }
+}
+
+@keyframes translate-b {
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+
+    40%{
+        bottom: -10px;
+        right: 70%;
+    }
+
+    90%{
+        bottom: -10px;
+        right: 0;
+    }
+
+    100%{
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
+@keyframes translate-tc {
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+
+    25%{
+        top: -10px;
+        left: 80%;
+    }
+
+    45%{
+        top: 60px;
+        left: 80%;
+    }
+
+    70%{
+        top: 60px;
+        left: -10px
+    }
+
+    90%{
+        top: -10px;
+        left: -10px;
+    }
+
+    100%{
+        top: -10px;
+        left: 10%;
+    }
+}
+
+@keyframes translate-bc {
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+
+    25%{
+        bottom: -10px;
+        right: 80%;
+    }
+
+    45%{
+        bottom: 60px;
+        right: 80%;
+    }
+
+    70%{
+        bottom: 60px;
+        right: -10px
+    }
+
+    90%{
+        bottom: -10px;
+        right: -10px;
+    }
+
+    100%{
+        bottom: -10px;
+        right: 20%;
+    }
+}
